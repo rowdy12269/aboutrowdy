@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | 尺ㄖ山ᗪㄚ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="profile.jpg" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style_hidden.css">
+</head>
+<body>
+  <!-- Lines Animation HTML -->
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <!-- End Lines Animation HTML -->
+
+  <canvas id="starfield-canvas"></canvas>
+
+  <button class="activate-btn" id="activateBtn">
+    CLICK ME
+  </button>
+
+  <div class="content-wrapper" id="contentWrapper">
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="custom-header">
+      <button id="theme-toggle" aria-label="Toggle theme" style="background:none;border:none;outline:none;cursor:pointer;display:flex;align-items:center;margin-right:8px;font-size:1.5em;color:inherit;">
+        <i id="theme-toggle-icon" class="fa-regular fa-moon"></i>
+      </button>
+      <a class="header-name" href="https://t.me/Me_Katagiri" target="_blank" style="text-decoration: none;">尺ㄖ山ᗪㄚ</a>
+      <nav class="nav-links">
+        <a href="#" onclick="window.location.reload(); return false;">Home</a>
+        <a href="https://t.me/aboutrowdy" target="_blank">Channel</a>
+      </nav>
+    </header>
+
+        <footer class="custom-footer full-width-footer">
+          <div class="footer-center-text"><span class="footer-copyright-text">&copy; 2025 Rowdy. All Right Reserved. <a href="https://t.me/aboutrowdy" target="_blank" class="footer-link">Rowdy</a></span></div>
+        </footer>
+    <div class="main-content">
+      <div class="profile-section">
+        <div class="profile-container">
+          <img src="profile.jpg" alt="Profile picture">
+        </div>
+
+        <div class="content-section">
+          <h1>Hi, I'm <span>尺ㄖ山ᗪㄚ</span></h1>
+          <h2><span>I am </span><span id="typed-text"></span><span id="cursor">|</span></h2>
+          <p>
+            I craft modern websites and clean digital experiences with a deep focus on design, usability, and purpose. What started as a passion has become my way of thinking. Solving complex problems with simple, smart solutions that actually feel good to use.
+          </p>
+
+          <div class="social-icons">
+            <a href="https://t.me/aboutrowdy" target="_blank" class="social-icon">
+              <span class="icon-circle"><i class="fas fa-paper-plane"></i></span>
+              <span class="icon-label">Telegram</span>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+              <span class="icon-circle"><i class="fab fa-github"></i></span>
+              <span class="icon-label">GitHub</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+              <span class="icon-circle"><i class="fab fa-instagram"></i></span>
+              <span class="icon-label">Instagram</span>
+            </a>
+            <a href="#" class="social-icon audio-control" id="audio-toggle">
+              <span class="icon-circle"><i class="fas fa-volume-high"></i></span>
+              <span class="icon-label">Mute</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <audio id="background-music" loop>
+      <source src="background-music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  
+
+
+<script src="script.js"></script>
+</body>
+</html>
